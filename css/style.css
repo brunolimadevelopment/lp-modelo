@@ -1,0 +1,233 @@
+.header {
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  left: 0;
+}
+
+.header nav {
+  background-color: #1f2f3e !important;
+}
+.section-hero-title {
+  color: #1f2d3d;
+  font-size: 40px;
+}
+.section-hero-desc {
+  font-size: 30px;
+  margin: 0 auto;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.subheadline-hero {
+  line-height: 120%;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  margin-bottom: 0;
+}
+.section-hero {
+  min-height: 90vh;
+  background-image: url("/images/office-buildings.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(255 255 255 / 87%);
+  z-index: 1;
+}
+
+/* Conteúdo acima da máscara */
+.section-hero .container {
+  z-index: 2;
+}
+
+.text-hero {
+  margin: 60px auto;
+}
+
+/* Fade-in leve (sem JS) */
+.fade-in {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.section {
+  margin: 60px 0;
+}
+.section-head-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.icon-step {
+  background-color: #1f2f3e;
+  padding: 7px 20px;
+  border-radius: 7px;
+  color: #fff;
+}
+
+.section-head-desc {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-course {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  padding: 20px;
+  background: #1f2f3e;
+}
+
+.card-course h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff !important;
+}
+
+.card-course-info h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000 !important;
+}
+
+.card-course-info {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 24.6%;
+  margin: 10px auto 0;
+}
+
+.block-price {
+  display: flex;
+  justify-content: center;
+}
+
+.block-price .card {
+  margin-top: 30px;
+}
+
+.card-mod {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 0 3px;
+}
+.card-parcela {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.accordion-item {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.accordion-header {
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  padding: 18px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header:hover {
+  background: #f0f4f8;
+}
+
+.icon {
+  font-size: 22px;
+  transition: transform 0.3s;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition:
+    max-height 0.4s ease,
+    padding 0.3s ease;
+}
+
+.accordion-content p,
+.accordion-content ul {
+  margin: 15px 0;
+}
+
+.accordion-content ul {
+  padding-left: 20px;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  padding: 15px 20px 20px;
+}
+
+.accordion-item.active .icon {
+  transform: rotate(45deg);
+}
+
+.bg-gray-accordion {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+.bg-dark-plan {
+  background-color: #1f2f3e;
+  padding: 40px 0;
+}
+
+.cta {
+  margin-top: 60px !important;
+}
+.text-cta {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bg-footer {
+  background-color: #1f2f3e;
+  height: auto;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
