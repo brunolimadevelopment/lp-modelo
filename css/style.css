@@ -102,8 +102,14 @@
 
 .card-course h3 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   color: #fff !important;
+}
+
+.card-course p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #d9d7d7 !important;
 }
 
 .card-course-info h3 {
