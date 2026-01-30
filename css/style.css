@@ -8,6 +8,12 @@
 .header nav {
   background-color: #1f2f3e !important;
 }
+
+.header img {
+  object-fit: cover;
+  height: 75px;
+  width: auto;
+}
 .section-hero-title {
   color: #1f2d3d;
   font-size: 40px;
