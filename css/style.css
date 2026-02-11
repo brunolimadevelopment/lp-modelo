@@ -3,6 +3,8 @@
   z-index: 9;
   right: 0;
   left: 0;
+  padding: 20px;
+  background: #1f2f3e;
 }
 
 .header nav {
@@ -11,8 +13,10 @@
 
 .header img {
   object-fit: cover;
-  height: 75px;
+  height: 135px;
   width: auto;
+  position: absolute;
+  top: -10px;
 }
 .section-hero-title {
   color: #1f2d3d;
@@ -242,4 +246,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .header img {
+    height: 75px !important;
+    top: -10px;
+  }
 }
