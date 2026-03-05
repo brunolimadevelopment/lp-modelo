@@ -41,3 +41,28 @@ const swiper = new Swiper('.swiper-aprender', {
     crossFade: true
   }
 });
+
+// Modal
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("campaignModal");
+    const closeBtn = document.querySelector(".close");
+
+    // verifica se já foi fechado antes
+    if (!localStorage.getItem("modalClosed")) {
+      setTimeout(() => {
+        modal.style.display = "flex";
+      }, 5000);
+    }
+
+        closeBtn.addEventListener("click", function () {
+          modal.style.display = "none";
+          localStorage.setItem("modalClosed", "true");
+        });
+
+        window.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+            localStorage.setItem("modalClosed", "true");
+          }
+        });
+  });

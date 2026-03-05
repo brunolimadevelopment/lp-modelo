@@ -37,10 +37,28 @@
   font-weight: 500;
 }
 
-.btn-cta-header:hover {
+.btn-cta-header:hover, .btn-cta-modal:hover {
   background-color: #f0bc3c;
   transform: scale(1.05);
   color: #000 !important;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+    width: 90% !important;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 1320px) {
+  .navbar-collapse {
+    width: 77% !important;
+  }
 }
 
 /* Ajuste para mobile */
@@ -52,13 +70,13 @@
     border-radius: 8px;
   }
 }
-.header nav {
+/* .header nav {
   background-color: #1b7a7e !important;
-}
+} */
 
 .header img {
   object-fit: cover;
-  height: 65px;
+  height: 55px;
   width: auto;
   position: absolute;
 }
@@ -126,7 +144,7 @@
   color: #1b7a7e;
   font-size: 3rem;
   letter-spacing: 1px;
-  text-align: justify;
+  text-align: center;
 }
 
 /* Container do Card */
@@ -156,8 +174,8 @@
 /* Corpo do Card */
 .card-mentoria-body {
   padding: 45px 20px ;
-  max-height: 300px;
-  min-height: 300px;
+  max-height: 350px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -595,8 +613,8 @@
 
 @media screen and (max-width: 1024px) {
   .header img {
-    max-height: 30px !important;
-    margin-right: 30px !important;
+    max-height: 40px !important;
+    margin-right: 40px !important;
   }
 
   .px-lg-5 {
@@ -604,4 +622,93 @@
     padding-right: 0 !important;
   }
 
+  .navbar-collapse {
+    flex-direction: column;
+  }
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  animation: modalFade 0.4s;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.cta-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #1877f2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-cta-modal {
+  background-color: #ffcc4d; /* Amarelo do print */
+  border: none;
+  color: #333 !important; /* Texto escuro para contraste */
+  font-size: 1.25rem;
+  transition: transform 0.2s ease;
+  font-weight: 500;
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.copyright-bar {
+  background-color: #15212b; /* Um tom ligeiramente mais escuro que o azul petróleo para contraste */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.copyright-text {
+  color: #ffffff;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+/* Opcional: destaque para o nome da mentoria */
+.copyright-text::first-letter {
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .copyright-text {
+    font-size: 0.75rem;
+  }
 }
