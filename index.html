@@ -25,59 +25,68 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KFML4G3Q');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-auto px-4">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFML4G3Q"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="header custom-header">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-auto px-lg-5">
         <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <a class="navbar-brand d-flex align-items-center" href="#">
             <img
-              src="./images/logo_mentoria_sindico_qualificado.webp"
+              src="./images/LOGO HEADER.png"
               alt="MSQ - Mentoria Síndico Qualificado"
             />
           </a>
 
-          <!-- Botão mobile -->
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Menu -->
           <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3 text-center">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
               <li class="nav-item">
-                <a class="nav-link" href="#diferencial">Diferencial</a>
+                <a class="nav-link text-uppercase fw-medium" href="#diferenciais">Diferenciais</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#ebook">eBook</a>
+                <a class="nav-link text-uppercase fw-medium" href="#plano">Plano</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#plano">Plano</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#sobre">Sobre a Mentoria</a>
+                <a class="nav-link text-uppercase fw-medium" href="#sobre">Sobre a Mentoria</a>
               </li>
             </ul>
 
-            <!-- CTA -->
-            <div class="d-flex justify-content-center">
+            <div class="d-flex">
               <a
                 href="https://pay.hotmart.com/W104121082G?off=9tbszupu&bid=1770302809983"
                 target="_blank"
-                class="btn btn-info fw-semibold px-4 rounded-pill"
+                class="btn btn-cta-header text-uppercase px-5 py-2 rounded-pill"
               >
-                Adquira a Mentoria MSQ
+                Adquira a Mentoria
               </a>
             </div>
           </div>
@@ -85,103 +94,90 @@
       </nav>
     </header>
 
-    <section
-      class="section-hero position-relative d-flex align-items-center pt-5 overflow-hidden"
-      id="sobre"
-    >
-      <div class="hero-overlay"></div>
+    <section class="section-hero-new position-relative d-flex align-items-center py-5">
+      <div class="container position-relative">
+        <div class="row align-items-center">
 
-      <div
-        class="container position-relative text-center fade-in pt-5 text-hero"
-      >
-        <div class="row justify-content-center mb-4">
-          <div class="col-lg-10">
-            <h1 class="fw-bold display-6 section-hero-title">
-              Mentoria Completa para Síndicos Profissionais
+          <div class="col-lg-6 text-start fade-in">
+            <h1 class="hero-title-new text-uppercase fw-normal mb-4">
+              Mentoria Completa <br> para Síndicos Profissionais
             </h1>
-          </div>
-        </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-xl-7 headline-container">
-            <div
-              class="ratio ratio-16x9 shadow rounded-4 overflow-hidden bg-dark"
-            >
-              <iframe
-                src="https://www.youtube.com/embed/Ly5KPHzpeGI?si=2nR__vNZPUWMNVTy"
-                title="Mentoria de Síndico Profissional"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="col-lg-10">
-              <p class="mt-3 text-center subheadline-hero">
-                A Mentoria para Síndicos Profissionais é um programa completo de
-                65 horas, voltado tanto
-                <strong
-                  >para síndicos profissionais que desejam se capacitar quanto
-                  para profissionais que querem iniciar a carreira como
-                  síndico.</strong
-                >
+            <div class="hero-description-new">
+              <p class="mb-4">
+                A Mentoria para Síndicos Profissionais é um programa completo de 65 horas, voltado tanto
+                <strong>para síndicos profissionais que desejam se capacitar quanto para profissionais que querem iniciar a carreira como síndico.</strong>
               </p>
-              <p class="mt-3 text-center subheadline-hero">
-                Com foco prático e estratégico, a mentoria aborda legislação,
-                gestão condominial, responsabilidades legais e posicionamento
-                profissional, proporcionando
-                <strong
-                  >segurança jurídica, redução de riscos e maior valorização no
-                  mercado,</strong
-                >
-                preparando o participante para uma atuação ética, segura e
-                profissional.
+              <p>
+                Com foco prático e estratégico, a mentoria aborda legislação, gestão condominial, responsabilidades legais e posicionamento profissional, proporcionando
+                <strong>segurança jurídica, redução de riscos e maior valorização no mercado,</strong>
+                preparando o participante para uma atuação ética, segura e profissional.
               </p>
             </div>
           </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="video-container-new shadow-lg">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden bg-dark">
+                <iframe
+                    src="https://www.youtube.com/embed/HOi_z9uKCcU?si=C7zGEwxuePAfew6U"
+                    title="Mentoria de Síndico Profissional"
+                    allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section class="section" id="diferencial">
+    <section class="section-mentoria py-5" id="sobre">
       <div class="container">
-        <div class="row">
-          <h2 class="section-head-title">Para quem é esta mentoria</h2>
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-0"
-          >
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="fw-semibold mb-0 text-body-emphasis">
-                  <span class="text-warning">Síndicos profissionais</span> que
-                  desejam se atualizar, se capacitar tecnicamente e atuar com
-                  mais segurança jurídica e profissionalismo.
-                </p>
-              </div>
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title-condensed text-uppercase">Para quem é esta mentoria?</h2>
+          </div>
+        </div>
+
+        <div class="row g-0 justify-content-center">
+          <div class="col-lg-3 col-md-6 card-mentoria-wrapper">
+            <div class="icon-placeholder-wrapper">
+              <img src="../msq/images/sindicos.svg" alt="Icone" class="img-placeholder rounded-circle shadow">
             </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="fw-semibold mb-0 text-body-emphasis">
-                  <span class="text-warning">Profissionais</span> que desejam se
-                  tornar síndicos profissionais, buscando uma formação sólida
-                  para ingressar no mercado condominial.
-                </p>
-              </div>
+            <div class="card-mentoria-body bg-teal-dark">
+              <h3 class="card-title-yellow">Síndicos profissionais</h3>
+              <p class="card-text-white">que desejam se atualizar, se capacitar tecnicamente e atuar com mais segurança jurídica e profissionalismo.</p>
             </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="fw-semibold mb-0 text-body-emphasis">
-                  <span class="text-warning">Contadores e administradores</span
-                  >, que atuam ou pretendem atuar no segmento condominial e
-                  desejam ampliar seu conhecimento técnico e estratégico.
-                </p>
-              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 card-mentoria-wrapper">
+            <div class="icon-placeholder-wrapper">
+              <img src="../msq/images/profissionais.svg" alt="Icone" class="img-placeholder rounded-circle shadow">
             </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="fw-semibold mb-0 text-body-emphasis">
-                  <span class="text-warning">Advogados</span> que já atuam ou
-                  querem se inserir no meio condominial, fortalecendo sua
-                  atuação jurídica junto a condomínios e síndicos.
-                </p>
-              </div>
+            <div class="card-mentoria-body bg-teal-medium">
+              <h3 class="card-title-yellow">Profissionais</h3>
+              <p class="card-text-white">que desejam se tornar síndicos profissionais, buscando uma formação sólida para ingressar no mercado condominial.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 card-mentoria-wrapper">
+            <div class="icon-placeholder-wrapper">
+              <img src="../msq/images/contadores.svg" alt="Icone" class="img-placeholder rounded-circle shadow">
+            </div>
+            <div class="card-mentoria-body bg-teal-light">
+              <h3 class="card-title-yellow">Contadores e administradores</h3>
+              <p class="card-text-white">que atuam ou pretendem atuar no segmento condominial e desejam ampliar seu conhecimento técnico e estratégico.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 card-mentoria-wrapper">
+            <div class="icon-placeholder-wrapper">
+              <img src="../msq/images/advogados.svg" alt="Icone" class="img-placeholder rounded-circle shadow">
+            </div>
+            <div class="card-mentoria-body bg-teal-xlight">
+              <h3 class="card-title-yellow">Advogados</h3>
+              <p class="card-text-white">que já atuam ou querem se inserir no meio condominial, fortalecendo sua atuação jurídica junto a condomínios e síndicos.</p>
             </div>
           </div>
         </div>
@@ -189,12 +185,12 @@
     </section>
 
     <section class="py-5" style="background-color: #1f2f3f">
-      <div class="container">
+      <div class="container objetivos">
         <div class="row align-items-center gy-4">
           <!-- Imagem / Visual -->
           <div class="col-lg-6 text-center">
             <img
-              src="https://placehold.co/600x460"
+              src="./images/banner1-siteMSQ.png"
               alt="Mentoria MSQ"
               class="img-fluid"
             />
@@ -202,179 +198,180 @@
 
           <!-- Conteúdo -->
           <div class="col-lg-6 text-white">
-            <h3 class="mb-4 fw-bold">
-              Nossos <span class="text-warning">Objetivos</span>
-            </h3>
+            <h2 class="title-objetivos text-uppercase mb-4">
+              Nossos <span class="text-yellow">Objetivos</span>
+            </h2>
 
-            <p>
-              O <strong>MSQ – Mentoria para Síndicos Profissionais</strong> tem
-              como objetivo estratégico formar e fortalecer síndicos altamente
-              capacitados, preparados para atuar com segurança jurídica,
-              eficiência administrativa e postura ética, em um mercado cada vez
-              mais exigente e profissionalizado.
-            </p>
+           <div class="text-description">
+              <p>
+                O <strong>MSQ – Mentoria para Síndicos Profissionais</strong> tem
+                como objetivo estratégico formar e fortalecer síndicos altamente
+                capacitados, preparados para atuar com segurança jurídica,
+                eficiência administrativa e postura ética, em um mercado cada vez
+                mais exigente e profissionalizado.
+              </p>
 
-            <p>
-              A mentoria busca desenvolver uma visão técnica, preventiva e
-              estratégica da gestão condominial, capacitando o participante a
-              tomar decisões seguras, reduzir riscos legais e financeiros,
-              prevenir conflitos e conduzir assembleias, contratos e rotinas com
-              confiança. O MSQ também tem como foco posicionar o síndico
-              profissional como autoridade técnica, valorizando sua atuação,
-              ampliando oportunidades no mercado condominial e promovendo uma
-              carreira sólida, sustentável e reconhecida.
-            </p>
+              <p>
+                A mentoria busca desenvolver uma visão técnica, preventiva e
+                estratégica da gestão condominial, capacitando o participante a
+                tomar decisões seguras, reduzir riscos legais e financeiros,
+                prevenir conflitos e conduzir assembleias, contratos e rotinas com
+                confiança. O MSQ também tem como foco posicionar o síndico
+                profissional como autoridade técnica, valorizando sua atuação,
+                ampliando oportunidades no mercado condominial e promovendo uma
+                carreira sólida, sustentável e reconhecida.
+              </p>
+            </div>
 
             <a
               href="https://pay.hotmart.com/W104121082G?off=9tbszupu&bid=1770302809983"
               target="_blank"
-              class="btn btn-info mt-3 px-4"
+              class="btn btn-cta-yellow text-uppercase fw-bold px-5 py-3 rounded-pill mt-3"
             >
-              Conhecer a Mentoria
+              Conheça a Mentoria
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section-aprender py-5" id="aprendizado">
       <div class="container">
-        <div class="row">
-          <h2 class="section-head-title">O que você vai aprender</h2>
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3 m-0"
-          >
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="text-body-secondary">
-                  Atuar com segurança jurídica, conhecendo limites, deveres e
-                  responsabilidades do síndico.
-                </p>
-              </div>
-            </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="text-body-secondary">
-                  Gerir o condomínio de forma administrativa e financeira, com
-                  organização e transparência.
-                </p>
-              </div>
-            </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="text-body-secondary">
-                  Conduzir assembleias válidas, tomadas de decisão e prestação
-                  de contas corretas.
-                </p>
-              </div>
-            </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="text-body-secondary">
-                  Prevenir riscos, passivos e judicializações na gestão
-                  condominial.
-                </p>
-              </div>
-            </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="text-body-secondary">
-                  Lidar com conflitos e crises, utilizando técnicas de
-                  comunicação e mediação.
-                </p>
-              </div>
-            </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="text-body-secondary">
-                  Se posicionar profissionalmente no mercado, valorizando sua
-                  atuação como síndico profissional.
-                </p>
-              </div>
-            </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <h2 class="section-title-condensed text-uppercase">O que você vai aprender?</h2>
           </div>
+        </div>
+
+        <div class="swiper swiper-aprender shadow-lg rounded-3">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-lg-5">
+                  <div class="slide-image" style="background-image: url('./images/office-buildings.jpg');"></div>
+                </div>
+                <div class="col-lg-7 d-flex align-items-center bg-teal-dark px-4 py-5">
+                  <p class="slide-text">Atuar com segurança jurídica, conhecendo limites, deveres e responsabilidades do síndico.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-lg-5">
+                  <div class="slide-image" style="background-image: url('./images/banner1-siteMSQ.png');"></div>
+                </div>
+                <div class="col-lg-7 d-flex align-items-center bg-teal-dark px-4 py-5">
+                  <p class="slide-text">Gerir o condomínio de forma administrativa e financeira, com organização e transparência.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-lg-5">
+                  <div class="slide-image" style="background-image: url('./images/banner1-siteMSQ.png');"></div>
+                </div>
+                <div class="col-lg-7 d-flex align-items-center bg-teal-dark px-4 py-5">
+                  <p class="slide-text">Conduzir assembleias válidas, tomadas de decisão e prestação de contas corretas.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-lg-5">
+                  <div class="slide-image" style="background-image: url('./images/banner1-siteMSQ.png');"></div>
+                </div>
+                <div class="col-lg-7 d-flex align-items-center bg-teal-dark px-4 py-5">
+                  <p class="slide-text">Prevenir riscos, passivos e judicializações na gestão condominial.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-lg-5">
+                  <div class="slide-image" style="background-image: url('./images/banner1-siteMSQ.png');"></div>
+                </div>
+                <div class="col-lg-7 d-flex align-items-center bg-teal-dark px-4 py-5">
+                  <p class="slide-text">Lidar com conflitos e crises, utilizando técnicas de comunicação e mediação.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-lg-5">
+                  <div class="slide-image" style="background-image: url('./images/banner1-siteMSQ.png');"></div>
+                </div>
+                <div class="col-lg-7 d-flex align-items-center bg-teal-dark px-4 py-5">
+                  <p class="slide-text">Se posicionar profissionalmente no mercado, valorizando sua atuação como síndico profissional.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section-diferenciais py-5" id="diferenciais">
       <div class="container">
-        <div class="row">
-          <h2 class="section-head-title">Diferenciais</h2>
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3 m-0"
-          >
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="mt-2 text-body-secondary">
-                  Abordagem prática e aplicada, voltada para situações reais da
-                  gestão condominial.
-                </p>
-              </div>
+        <div class="row mb-5">
+          <div class="col-12 d-flex align-items-center justify-content-end gap-3">
+            <div class="icon-diferencial">
+              <img src="../msq/images/diferenciais.svg" alt="Diferenciais" style="width: 40px;">
             </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="mt-2 text-body-secondary">
-                  Foco em prevenção de riscos jurídicos, reduzindo passivos
-                  civis, trabalhistas e financeiros.
-                </p>
-              </div>
+            <h2 class="title-diferenciais text-uppercase m-0">Diferenciais</h2>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card-diferencial">
+              <p>Abordagem prática e aplicada, voltada para situações reais da gestão condominial.</p>
             </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="mt-2 text-body-secondary">
-                  Conteúdo técnico atualizado, alinhado à legislação,
-                  jurisprudência e boas práticas do mercado.
-                </p>
-              </div>
+          </div>
+          <div class="col">
+            <div class="card-diferencial">
+              <p>Foco em prevenção de riscos jurídicos, reduzindo passivos civis, trabalhistas e financeiros.</p>
             </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="mt-2 text-body-secondary">
-                  Desenvolvimento de postura profissional e estratégica, indo
-                  além da teoria operacional.
-                </p>
-              </div>
+          </div>
+          <div class="col">
+            <div class="card-diferencial">
+              <p>Conteúdo técnico atualizado, alinhado à legislação, jurisprudência e boas práticas do mercado.</p>
             </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="mt-2 text-body-secondary">
-                  Visão completa da gestão condominial, integrando aspectos
-                  legais, administrativos, financeiros e humanos.
-                </p>
-              </div>
+          </div>
+          <div class="col">
+            <div class="card-diferencial">
+              <p>Desenvolvimento de postura profissional e estratégica, indo além da teoria operacional.</p>
             </div>
-            <div class="card-course col d-flex align-items-start">
-              <div>
-                <p class="mt-2 text-body-secondary">
-                  Preparação para valorização e posicionamento no mercado,
-                  fortalecendo a autoridade do síndico profissional.
-                </p>
-              </div>
+          </div>
+          <div class="col">
+            <div class="card-diferencial">
+              <p>Visão completa da gestão condominial, integrando aspectos legais, administrativos, financeiros e humanos.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-diferencial">
+              <p>Preparação para valorização e posicionamento no mercado, fortalecendo a autoridade do síndico profissional.</p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="cta col text-center mt-4">
-            <h3 class="text-cta">
-              Inscreva-se agora e atue com segurança jurídica
-            </h3>
-            <a
-              href="https://pay.hotmart.com/W104121082G?off=9tbszupu&bid=1770302809983"
-              target="_blank"
-              title="Quero me inscrever agora!"
-              class="btn btn-info fw-semibold px-4 rounded-pill"
-              >Quero me inscrever agora!</a
-            >
-          </div>
-        </div>
+
+
       </div>
     </section>
 
-    <section class="py-5 text-white" style="background-color: #1f2d3d">
+    <!-- <section class="py-5 text-white" style="background-color: #1f2d3d">
       <div class="container">
         <div class="row align-items-center">
-          <!-- Coluna imagem -->
           <div class="col-lg-6 text-center">
             <img
               src="https://placehold.co/600x460"
@@ -383,7 +380,6 @@
             />
           </div>
 
-          <!-- Coluna texto -->
           <div class="col-lg-6">
             <h2 class="fw-bold my-3">
               Adquira <span class="text-warning">nossos E-books</span>
@@ -398,12 +394,17 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="section bg-gray-accordion m-0">
       <div class="container">
         <div class="row">
-          <h2 class="section-head-title mb-4">Dúvidas frequentes</h2>
+          <div class="col-12 d-flex align-items-center justify-content-start gap-3">
+            <h2 class="section-title-condensed text-uppercase">Dúvidas frequentes</h2>
+            <div class="icon-diferencial">
+              <img src="../msq/images/duvidas.svg" alt="Diferenciais" style="width: 70px;">
+            </div>
+          </div>
           <div class="accordion">
             <div class="accordion-item">
               <button class="accordion-header">
@@ -476,18 +477,18 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col text-center mt-4">
-                <h3 class="text-cta">
-                  Inscreva-se agora e atue com segurança jurídica
+            <div class="row mt-5">
+              <div class="col-12 cta-wrapper d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+                <h3 class="text-cta-final text-uppercase m-0">
+                  Inscreva-se agora e atue com segurança jurídica!
                 </h3>
                 <a
                   href="https://pay.hotmart.com/W104121082G?off=9tbszupu&bid=1770302809983"
                   target="_blank"
-                  title="Quero me inscrever agora!"
-                  class="btn btn-info fw-semibold px-4 rounded-pill"
-                  >Quero me inscrever agora!</a
+                  class="btn btn-cta-yellow-final text-uppercase fw-bold px-5 py-3 rounded-pill"
                 >
+                  Quero me inscrever!
+                </a>
               </div>
             </div>
           </div>
@@ -573,7 +574,7 @@
       </div>
     </section> -->
 
-    <section class="section">
+    <section class="section" id="plano">
       <div class="container">
         <div class="row">
           <h2 class="section-head-title">Mentoria Síndico Qualificado</h2>
@@ -679,7 +680,7 @@
                   title="Quero me inscrever agora!"
                   class="btn btn-info fw-semibold px-4 rounded-pill"
                 >
-                  Inscrições por tempo limitado
+                  Inscrições por tempo limitado <i class="fa-solid fa-clock"></i>
                 </a>
               </div>
             </div>
@@ -787,6 +788,9 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/main.js"></script>
   </body>

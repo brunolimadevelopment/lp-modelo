@@ -1,83 +1,359 @@
-.header {
-  position: absolute;
-  z-index: 9;
-  right: 0;
-  left: 0;
-  padding: 20px;
-  background: #1f2f3e;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.icon {
+  font-size: 22px;
 }
 
+/* efeitos novo header */
+/* Fundo verde petróleo conforme o print */
+.header {
+  /* position: absolute;
+  z-index: 9;
+  right: 0;
+  left: 0; */
+  padding: 50px 20px;
+  background: #1b7a7e;
+  font-family: "Bebas Neue", sans-serif; /* Fonte condensada para o header */
+}
+
+/* Estilo dos links do menu */
+.custom-header .nav-link {
+  color: #fdfdfd !important;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+.custom-header .nav-link:hover {
+  color: #ffcc00 !important; /* Efeito hover opcional */
+}
+
+/* Botão Adquira a Mentoria (Amarelo) */
+.btn-cta-header {
+  background-color: #ffcc4d; /* Amarelo do print */
+  border: none;
+  color: #333 !important; /* Texto escuro para contraste */
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+  font-weight: 500;
+}
+
+.btn-cta-header:hover {
+  background-color: #f0bc3c;
+  transform: scale(1.05);
+  color: #000 !important;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #1b7a7e;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+}
 .header nav {
-  background-color: #1f2f3e !important;
+  background-color: #1b7a7e !important;
 }
 
 .header img {
   object-fit: cover;
-  height: 135px;
+  height: 65px;
   width: auto;
   position: absolute;
-  top: -10px;
-}
-.section-hero-title {
-  color: #1f2d3d;
-  font-size: 40px;
-}
-.section-hero-desc {
-  font-size: 30px;
-  margin: 0 auto;
-  line-height: 40px;
-  margin-bottom: 25px;
-}
-.headline-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-.subheadline-hero {
-  line-height: 120%;
-  font-size: 24px !important;
-  font-weight: 400 !important;
-  margin-bottom: 0;
-}
-.section-hero {
-  min-height: 90vh;
-  background-image: url("/images/office-buildings.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgb(255 255 255 / 87%);
-  z-index: 1;
 }
 
-/* Conteúdo acima da máscara */
-.section-hero .container {
+/* nova seção  Mentoria Completa*/
+/* Estilo da Seção Hero */
+.section-hero-new {
+  /* Gradiente semelhante ao fundo da imagem enviada */
+  background: linear-gradient(135deg, #f7e38a 0%, #e9c46a 100%);
+  color: #333;
+  margin-top: 100px;
+}
+
+/* Título em Fonte Condensada (Bebas Neue recomendada) */
+.hero-title-new {
+  font-family: 'Bebas Neue', sans-serif; /* Certifique-se de importar no Google Fonts */
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+/* Texto de Descrição */
+.hero-description-new p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2d2d2d;
+}
+
+.hero-description-new strong {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Container do Vídeo */
+.video-container-new {
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.video-container-new:hover {
+  transform: translateY(-5px);
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 991px) {
+  .hero-title-new {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .hero-description-new {
+    text-align: center;
+  }
+  .section-hero-new {
+    padding-top: 80px;
+  }
+}
+
+/* para quem é essa mentoria */
+/* Título da Seção */
+.section-title-condensed {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #1b7a7e;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+/* Container do Card */
+.card-mentoria-wrapper {
+  position: relative;
+  padding-top: 40px; /* Espaço para o ícone flutuante */
+  text-align: center;
+}
+
+/* Ícone Circular */
+.icon-placeholder-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
 }
 
-.text-hero {
-  margin: 60px auto;
+.img-placeholder {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  background-color: #fff;
 }
 
-/* Fade-in leve (sem JS) */
-.fade-in {
-  animation: fadeInUp 0.8s ease-out both;
+/* Corpo do Card */
+.card-mentoria-body {
+  padding: 45px 20px ;
+  max-height: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/* Cores em Gradiente de Blocos (Baseado na imagem) */
+.bg-teal-dark { background-color: #1b7a7e; }    /* Azul Petróleo mais escuro */
+.bg-teal-medium { background-color: #3b9498; }
+.bg-teal-light { background-color: #5bb0b4; }
+.bg-teal-xlight { background-color: #7ccbd0; }
+
+/* Tipografia Interna */
+.card-title-yellow {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffcc4d; /* Amarelo do botão CTA */
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.card-text-white {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Ajuste para não ter bordas entre cards no desktop */
+@media (min-width: 992px) {
+  .g-0 > [class*="col-"] {
+    padding-right: 2px;
+    padding-left: 2px;
   }
 }
+
+@media (max-width: 991px) {
+  .card-mentoria-wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+/* Seção objetivos */
+.title-objetivos {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+}
+
+.text-yellow {
+  color: #ffcc4d; /* Amarelo ouro do layout */
+}
+
+/* Estilo do parágrafo */
+.text-description p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+/* Botão Amarelo idêntico ao print */
+.btn-cta-yellow {
+  background-color: #ffcc4d;
+  color: #1a2733 !important;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-cta-yellow:hover {
+  background-color: #f0bc3c;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+  .title-objetivos {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .section-objetivos {
+    text-align: center;
+  }
+}
+
+
+/* Seção Diferenciais */
+.section-diferenciais {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+/* Título Condensado */
+.title-diferenciais {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffcc4d;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+/* Estilo dos Cards Amarelos */
+.card-diferencial {
+  background-color: #ffcc4d; /* Amarelo do print */
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px; /* Bordas levemente arredondadas como no print */
+  transition: transform 0.3s ease;
+}
+
+.card-diferencial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-diferencial p {
+  color: #1a2733; /* Texto escuro para contraste */
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+  .title-diferenciais {
+    font-size: 2.8rem;
+  }
+  .card-diferencial {
+    min-height: 150px;
+  }
+}
+
+/* O que voce vai aprender */
+.section-aprender {
+  /* Espaço para sua imagem de background com grafismos */
+  background-size: auto;
+  background-position: center;
+  /* background-image: url('../images/backgroundSectionAprender.png'); */
+  background-size: cover;
+  min-height: auto; /* Remove a altura total da seção */
+}
+
+/* .section-aprender::after {
+  background-size: auto;
+  background-position: center;
+  background-image: url('../images/backgroundSectionAprender.png');
+} */
+
+
+.bg-teal-dark {
+  background-color: #1b7a7e; /* Azul petróleo do print */
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-text {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* Customização das setas e paginação Swiper */
+.swiper-aprender .swiper-button-next,
+.swiper-aprender .swiper-button-prev {
+  color: #ffcc4d; /* Amarelo MSQ */
+}
+
+.swiper-aprender .swiper-pagination-bullet-active {
+  background: #ffcc4d;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+  .slide-text {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .slide-image {
+    min-height: 250px;
+  }
+}
+
 .section {
   margin: 60px 0;
 }
@@ -111,21 +387,40 @@
 }
 
 .card-course h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #fff !important;
+  text-align: justify;
 }
 
 .card-course p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #d9d7d7 !important;
+  text-align: justify;
 }
 
+.accordion-header  {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: #1f2f3e !important;
+}
+.accordion-content p {
+  font-size: 20px;
+  font-weight: 500 !important;
+  color: #1f2f3e !important;
+}
+/* .objetivos p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #d9d7d7 !important;
+  text-align: justify;
+} */
 .card-course-info h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: #000 !important;
+  text-align: justify;
 }
 
 .card-course-info {
@@ -211,6 +506,41 @@
   padding-left: 20px;
 }
 
+/* Texto da chamada final */
+.text-cta-final {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffcc4d; /* Amarelo conforme imagem 9 */
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Botão específico deste CTA */
+.btn-cta-yellow-final {
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: #ffcc4d;
+  color: #1a2733 !important;
+  border: none;
+  font-size: 1.5rem;
+  white-space: nowrap; /* Evita que o texto do botão quebre em duas linhas */
+  transition: all 0.3s ease;
+}
+
+.btn-cta-yellow-final:hover {
+  background-color: #f0bc3c;
+  transform: scale(1.05);
+}
+
+/* Ajuste de responsividade para o CTA */
+@media (max-width: 768px) {
+  .text-cta-final {
+    font-size: 1.8rem;
+  }
+  .cta-wrapper {
+    gap: 20px;
+  }
+}
+
 .accordion-item.active .accordion-content {
   max-height: 500px;
   padding: 15px 20px 20px;
@@ -248,13 +578,30 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .header {
-    padding: 20px 0;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .navbar-nav {
+    padding-top: 3rem;
+  }
+  .header img {
+    height: 60px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header img {
+    max-height: 30px !important;
+    margin-right: 30px !important;
   }
 
-  .header img {
-    height: 75px !important;
-    top: -10px;
+  .px-lg-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
+
 }

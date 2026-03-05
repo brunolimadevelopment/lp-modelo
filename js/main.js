@@ -22,3 +22,22 @@ headers.forEach((header) => {
     item.classList.toggle("active");
   });
 });
+
+const swiper = new Swiper('.swiper-aprender', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  effect: 'fade', // Transição suave entre os conteúdos
+  fadeEffect: {
+    crossFade: true
+  }
+});
